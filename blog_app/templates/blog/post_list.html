@@ -9,7 +9,7 @@
 
     {% for post in posts %}
       <article class="darken">
-        <h3><a href = "#">{{ post.title }}</a></h3>
+        <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
         <p>{{ post.flavor_text }}</p>
         <date>{{ post.published_date }}, by {{ post.author }}</date>
       </article>

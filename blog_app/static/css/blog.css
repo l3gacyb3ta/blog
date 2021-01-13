@@ -5,6 +5,10 @@ date {
   color: rgb(176, 69, 115)
 }
 
+name {
+  color: rgb(214, 156, 181)
+}
+
 h3 {
   text-color: black;
 }
@@ -101,4 +105,8 @@ ol {
 
 .center {
   text-align: center;
+}
+
+.right {
+  text-align: right;
 }
