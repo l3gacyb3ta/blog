@@ -1,0 +1,104 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+
+date {
+  color: rgb(176, 69, 115)
+}
+
+h3 {
+  text-color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+	font-family: sans-serif;
+  background-color: rgba(224, 202, 224, 0.747);
+  color: black;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background: rgb(211, 136, 147);
+  font-family: 'Roboto Mono', monospace;
+}
+
+header img {
+  width: 50px;
+  background: white;
+  border-radius: 5px;
+  margin: 0 20px 0 40px;
+}
+
+article {
+  background: white;
+  border: 17px solid white;
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 2px;
+  padding: 10px;
+  class: darken;
+}
+
+strike{
+  text-decoration: line-through;
+}
+
+a {
+  color: rgb(82, 0, 73);
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  color: rgb(255, 0, 242);
+  text-shadow: 2px 2px #ffffff;
+}
+
+h2 {
+  text-align: center
+}
+
+p {
+  color: rgb(161, 59, 135);
+}
+
+ol {
+  color: rgb(60, 134, 156);
+}
+
+/* IDs */
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#footer {
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
+  text-align: center
+}
+
+/* CLASSES */
+
+.darken:hover {
+  background-color: rgb(109, 192, 201, 0.5)
+}
+
+.dark {
+  color: rgb(56, 187, 201);
+  font-family: 'Roboto Mono', monospace;
+}
+
+.center {
+  text-align: center;
+}
