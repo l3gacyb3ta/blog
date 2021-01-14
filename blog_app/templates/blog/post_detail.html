@@ -4,8 +4,14 @@
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
   </head>
   <body>
+    <ul>
+     <li><a href="/">home</a></li>
+     <li><a href="/blog">blog</a></li>
+     <li><a href="/contact">contact</a></li>
+    </ul>
     <article>
-    <h3 class="center">My blog (not a permanent title) - {{ post.title }}</h3>
+
+    <h1 class="center">My blog (not a permanent title) - {{ post.title }}</h1>
     {% if post.published_date %}
         <date>
             {{ post.published_date }}
@@ -13,7 +19,7 @@
         <name class="right">{{ post.author }}</name>
     {% endif %}
     <br><br>
-    {{ post.text|linebreaksbr }}
+    <p>{{ post.text|linebreaksbr }}</p>
     </article>
   </body>
 </html>

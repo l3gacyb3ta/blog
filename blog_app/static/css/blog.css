@@ -9,6 +9,30 @@ name {
   color: rgb(214, 156, 181)
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(48, 17, 66);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
 h3 {
   text-color: black;
 }
@@ -17,7 +41,7 @@ body {
   margin: 0;
   padding: 0;
 	font-family: sans-serif;
-  background-color: rgba(224, 202, 224, 0.747);
+  background-color: rgba(31, 4, 31);
   color: black;
 }
 
@@ -36,8 +60,8 @@ header img {
 }
 
 article {
-  background: white;
-  border: 17px solid white;
+  background: rgb(110, 46, 110);
+  border: 17px;
   width: 90%;
   margin: 20px auto;
   border-radius: 2px;
@@ -56,8 +80,7 @@ a {
 
 h1 {
   font-family: 'Roboto Mono', monospace;
-  color: rgb(255, 0, 242);
-  text-shadow: 2px 2px #ffffff;
+  color: rgb(255, 163, 242);
 }
 
 h2 {
@@ -65,7 +88,7 @@ h2 {
 }
 
 p {
-  color: rgb(161, 59, 135);
+  color: #ffffff;
 }
 
 ol {
