@@ -1,3 +1,4 @@
+{% load static %}
 <html>
   <head>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
@@ -11,10 +12,13 @@
      <li><a href="/projects">projects</a></li>
     </ul>
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <ul>
-      {% for project in projects %}
-        <li>{{ project.flavor_text }}</li>
-      {% endfor %}
-    </ul>
+
+    {% for project in projects %}
+    <article class="content">
+      <img src="{{ project.cover_image }}" width=100 height=100> <br>
+      {{ project.flavor_text }}
+    </article>
+    {% endfor %}
+
   </body>
 </html>
