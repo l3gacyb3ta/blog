@@ -25,6 +25,7 @@ class Contact(models.Model):
 
 class Project(models.Model):
     cover_image = models.CharField(max_length=200, null=True)
+    image_alt = models.CharField(max_length=128, default=" ")
     title = models.CharField(max_length=200)
     description = models.TextField()
     created_date = models.DateTimeField(blank=True, null=True)
