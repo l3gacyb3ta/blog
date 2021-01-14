@@ -17,3 +17,16 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+class Contact(models.Model):
+    url = models.CharField(max_length=200)
+    name = models.CharField(max_length=200)
+    flavor_text = models.CharField(max_length=128, default=" ")
+
+class Project(models.Model):
+    cover_image = models.CharField(max_length=200, null=True)
+    title = models.CharField(max_length=200)
+    description = models.TextField()
+    created_date = models.DateTimeField(blank=True, null=True)
+    published_date = models.DateTimeField(blank=True, null=True)
+    flavor_text = models.CharField(max_length=128, default=" ")
