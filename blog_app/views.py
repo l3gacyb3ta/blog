@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404
 from django.utils import timezone
-from .models import Post
+from .models import Post, Contact, Project
 
 def post_list(request):
     posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
@@ -14,7 +14,9 @@ def home(request):
     return render(request, 'blog/home.html')
 
 def contact(request):
-    return render(request, 'blog/contact.html')
+    contacts = Contact.objects.order_by('url')
+    return render(request, 'blog/contact.html', { 'contacts' : contacts })
 
 def projects(request):
-    return render(request, 'blog/projects.html')
+    projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
+    return render(request, 'blog/projects.html', { 'projects': projects })
