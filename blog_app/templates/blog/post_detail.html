@@ -1,25 +1,26 @@
 <html>
   <head>
-    {% load static %}
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <title>l3gacy - home</title>
   </head>
   <body>
     <ul>
      <li><a href="/">home</a></li>
      <li><a href="/blog">blog</a></li>
      <li><a href="/contact">contact</a></li>
+     <li><a href="/projects">projects</a></li>
     </ul>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <article>
-
-    <h1 class="center">My blog (not a permanent title) - {{ post.title }}</h1>
-    {% if post.published_date %}
-        <date>
-            {{ post.published_date }}
-        </date>
-        <name class="right">{{ post.author }}</name>
-    {% endif %}
-    <br><br>
-    <p>{{ post.text|linebreaksbr }}</p>
+      <h1 class="center">My blog (not a permanent title) - {{ post.title }}</h1>
+      {% if post.published_date %}
+          <date>
+              {{ post.published_date }}
+          </date>
+          <name class="right">{{ post.author }}</name>
+      {% endif %}
+      <br><br>
+      <p>{{ post.text|linebreaksbr }}</p>
     </article>
   </body>
 </html>

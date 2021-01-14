@@ -9,30 +9,6 @@ name {
   color: rgb(214, 156, 181)
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: rgb(48, 17, 66);
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 h3 {
   text-color: black;
 }
@@ -74,7 +50,8 @@ strike{
 }
 
 a {
-  color: rgb(82, 0, 73);
+  /*color: rgb(82, 0, 73);*/
+  color: #ffffff;
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -132,4 +109,8 @@ ol {
 
 .right {
   text-align: right;
+}
+
+.reset {
+  all: revert;
 }
