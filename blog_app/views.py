@@ -12,3 +12,9 @@ def post_detail(request, pk):
 
 def home(request):
     return render(request, 'blog/home.html')
+
+def contact(request):
+    return render(request, 'blog/contact.html')
+
+def projects(request):
+    return render(request, 'blog/projects.html')
