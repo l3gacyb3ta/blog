@@ -1,5 +1,21 @@
-<ul>
-{% for contact in contacts %}
-<li>{{ contact.url }}</li>
-{% endfor %}
-</ul>
+{% load static %}
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <title>l3gacy - home</title>
+  </head>
+  <body>
+    <ul>
+     <li><a href="/">home</a></li>
+     <li><a href="/blog">blog</a></li>
+     <li><a href="/contact">contact</a></li>
+     <li><a href="/projects">projects</a></li>
+    </ul>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
+    {% for contact in contacts %}
+    <article class="center"><p><a href="{{ contact.url }}">{{ contact.name }}</a> - {{ contact.flavor_text }}</p></article>
+    {% endfor %}
+
+  </body>
+</html>
