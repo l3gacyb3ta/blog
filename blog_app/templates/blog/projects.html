@@ -1,10 +1,10 @@
 {% load static %}
 <html>
   <head>
-
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <title>l3gacy - home</title>
-    
+
   </head>
   <body>
 
@@ -14,7 +14,7 @@
      <li><a href="/contact">contact</a></li>
      <li><a href="/projects">projects</a></li>
     </ul>
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
 
     {% for project in projects %}
     <article class="center">

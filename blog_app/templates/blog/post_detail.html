@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <title>l3gacy - home</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
      <li><a href="/contact">contact</a></li>
      <li><a href="/projects">projects</a></li>
     </ul>
-    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+
     <article>
       <h1 class="center">My blog (not a permanent title) - {{ post.title }}</h1>
       {% if post.published_date %}
