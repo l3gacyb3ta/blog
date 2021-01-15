@@ -24,7 +24,7 @@ body {
 header {
   display: flex;
   align-items: center;
-  background: rgb(211, 136, 147);
+  background: rgb(87, 11, 87);
   font-family: 'Roboto Mono', monospace;
 }
 
@@ -69,8 +69,34 @@ p {
 }
 
 ol {
-  color: rgb(60, 134, 156);
+  color: rgb(87, 11, 87);
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(87, 11, 87);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: rgb(33, 4, 33);
+}
+
 
 /* IDs */
 
