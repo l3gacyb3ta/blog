@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>l3gacy - home</title>
+    <title>l3gacy - contacts</title>
   </head>
   <body>
     <ul>
@@ -13,6 +13,9 @@
      <li><a href="/projects">projects</a></li>
     </ul>
 
+    <br>
+    <h1 class="center">contact me!</h1>
+    <br>
 
     {% for contact in contacts %}
     <article class="center"><p><a href="{{ contact.url }}">{{ contact.name }}</a> - {{ contact.flavor_text }}</p></article>

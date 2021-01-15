@@ -3,7 +3,7 @@
   <head>
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    <title>l3gacy - home</title>
+    <title>l3gacy - blog</title>
   </head>
   <body>
     <ul>
@@ -13,11 +13,11 @@
      <li><a href="/projects">projects</a></li>
     </ul>
 
-    <h1 class="center">My blog (not a permanent title) </h1>
+    <h1 class="center">blog</h1>
     <div id="post_list" class="center">
 
     {% for post in posts %}
-      <article class="darken">
+      <article class="darken" onclick="location.href = '{% url 'post_detail' pk=post.pk %}'">
         <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
         <p>{{ post.flavor_text }}</p>
         <date>{{ post.published_date }}, by {{ post.author }}</date>
