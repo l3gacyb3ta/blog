@@ -7,22 +7,25 @@
 
   </head>
   <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <ul>
+         <li><a href="/">home</a></li>
+         <li><a href="/blog">blog</a></li>
+         <li><a href="/contact">contact</a></li>
+         <li><a href="/projects">projects</a></li>
+        </ul>
 
-    <ul>
-     <li><a href="/">home</a></li>
-     <li><a href="/blog">blog</a></li>
-     <li><a href="/contact">contact</a></li>
-     <li><a href="/projects">projects</a></li>
-    </ul>
+        <h1 class="center">projects</h1>
 
-    <h1 class="center">projects</h1>
-
-    {% for project in projects %}
-    <article class="center">
-      <img src="{{ project.cover_image }}" width=200 height=200 alt="{{ project.image_alt }}"> <br>
-      {{ project.flavor_text }}
-    </article>
-    {% endfor %}
-    <footer><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</footer>
+        {% for project in projects %}
+        <article class="center">
+          <img src="{{ project.cover_image }}" width=200 height=200 alt="{{ project.image_alt }}"> <br>
+          {{ project.flavor_text }}
+        </article>
+        {% endfor %}
+      </div>
+    <footer id="footer">{{ footer }}</footer>
+  </div>
   </body>
 </html>
