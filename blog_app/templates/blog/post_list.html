@@ -6,25 +6,29 @@
     <title>l3gacy - blog</title>
   </head>
   <body>
-    <ul>
-     <li><a href="/">home</a></li>
-     <li><a href="/blog">blog</a></li>
-     <li><a href="/contact">contact</a></li>
-     <li><a href="/projects">projects</a></li>
-    </ul>
+    <div id="page-container">
+      <div id="content-wrap">
+        <ul>
+         <li><a href="/">home</a></li>
+         <li><a href="/blog">blog</a></li>
+         <li><a href="/contact">contact</a></li>
+         <li><a href="/projects">projects</a></li>
+        </ul>
 
-    <h1 class="center">blog</h1>
-    <div id="post_list" class="center">
+        <h1 class="center">blog</h1>
+        <div id="post_list" class="center">
 
-    {% for post in posts %}
-      <article class="darken" onclick="location.href = '{% url 'post_detail' pk=post.pk %}'">
-        <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
-        <p>{{ post.flavor_text }}</p>
-        <date>{{ post.published_date }}, by {{ post.author }}</date>
-      </article>
-    {% endfor %}
+        {% for post in posts %}
+          <article class="darken" onclick="location.href = '{% url 'post_detail' pk=post.pk %}'">
+            <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+            <p>{{ post.flavor_text }}</p>
+            <date>{{ post.published_date }}, by {{ post.author }}</date>
+          </article>
+        {% endfor %}
 
+        </div>
+      </div>
+      <footer id="footer"><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</footer>
     </div>
-    <footer><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</footer>
   </body>
 </html>
