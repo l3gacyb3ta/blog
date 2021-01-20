@@ -21,5 +21,5 @@ def contact(request):
     return render(request, 'blog/contact.html', { 'contacts' : contacts, 'footer': footer})
 
 def projects(request):
-    projects = Project.objects.filter(published_date__lte=timezone.now()).order_by('published_date').reverse()
+    projects = Project.objects.filter(created_date__lte=timezone.now()).order_by('created_date').reverse()
     return render(request, 'blog/projects.html', { 'projects': projects, 'footer': footer})
