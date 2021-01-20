@@ -22,7 +22,7 @@
           <article class="darken" onclick="location.href = '{% url 'post_detail' pk=post.pk %}'">
             <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
             <p>{{ post.flavor_text }}</p>
-            <date>{{ post.published_date }}, by {{ post.author }}</date>
+            <date>{{ post.created_date }}, by {{ post.author }}</date>
           </article>
         {% endfor %}
 
