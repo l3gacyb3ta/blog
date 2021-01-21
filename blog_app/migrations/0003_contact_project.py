@@ -6,29 +6,45 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog_app', '0002_post_flavor_text'),
+        ("blog_app", "0002_post_flavor_text"),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='Contact',
+            name="Contact",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('url', models.CharField(max_length=200)),
-                ('name', models.CharField(max_length=200)),
-                ('flavor_text', models.CharField(default=' ', max_length=128)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("url", models.CharField(max_length=200)),
+                ("name", models.CharField(max_length=200)),
+                ("flavor_text", models.CharField(default=" ", max_length=128)),
             ],
         ),
         migrations.CreateModel(
-            name='Project',
+            name="Project",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('cover_image', models.CharField(max_length=200, null=True)),
-                ('title', models.CharField(max_length=200)),
-                ('description', models.TextField()),
-                ('created_date', models.DateTimeField(blank=True, null=True)),
-                ('published_date', models.DateTimeField(blank=True, null=True)),
-                ('flavor_text', models.CharField(default=' ', max_length=128)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("cover_image", models.CharField(max_length=200, null=True)),
+                ("title", models.CharField(max_length=200)),
+                ("description", models.TextField()),
+                ("created_date", models.DateTimeField(blank=True, null=True)),
+                ("published_date", models.DateTimeField(blank=True, null=True)),
+                ("flavor_text", models.CharField(default=" ", max_length=128)),
             ],
         ),
     ]

@@ -11,6 +11,7 @@ class Post(models.Model):
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
     flavor_text = models.CharField(max_length=128, default=" ")
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()
@@ -18,10 +19,12 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+
 class Contact(models.Model):
     url = models.CharField(max_length=200)
     name = models.CharField(max_length=200)
     flavor_text = models.CharField(max_length=128, default=" ")
+
 
 class Project(models.Model):
     cover_image = models.CharField(max_length=200, null=True)
