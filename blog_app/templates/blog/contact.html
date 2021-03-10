@@ -23,7 +23,7 @@
         <article class="center"><p><a href="{{ contact.url }}">{{ contact.name }}</a> - {{ contact.flavor_text }}</p></article>
         {% endfor %}
       </div>
-      <footer id="footer">{{ footer }}</footer>
+      <footer id="footer">{{ footer | safe}}</footer>
     </div>
   </body>
 </html>
