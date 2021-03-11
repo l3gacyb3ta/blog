@@ -25,7 +25,14 @@ SECRET_KEY = "+e9$v85=izze6xvj6!h_8re99m=&-3gy&^d=l@#1wtlp%ug2ww"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["blog.arbee.repl.co", "79a1f3e3-fdff-4ee6-a909-aea50281e41b.id.repl.co","0.0.0.0", "127.0.0.1", ".pythonanywhere.com", "localhost"]
+ALLOWED_HOSTS = [
+    "blog.arbee.repl.co",
+    "79a1f3e3-fdff-4ee6-a909-aea50281e41b.id.repl.co",
+    "0.0.0.0",
+    "127.0.0.1",
+    ".pythonanywhere.com",
+    "localhost",
+]
 
 
 # Application definition
