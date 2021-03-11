@@ -1,4 +1,6 @@
+# blog
 db.sqlite3
+
 # Python
 *.pyc
 *~
