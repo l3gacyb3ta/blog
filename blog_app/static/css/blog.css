@@ -60,6 +60,10 @@ h1 {
   color: rgb(255, 163, 242);
 }
 
+h3 {
+  color: #ffffff;
+}
+
 h2 {
   text-align: center
 }
@@ -90,6 +94,10 @@ li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+
+code {
+  color:rgb(255,255,255);
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -165,6 +173,7 @@ li a:hover {
 .left {
   text-align: left;
 }
+
 hr {
   color: rgba(255,255,255,0.9);
 }
