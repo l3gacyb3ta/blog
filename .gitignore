@@ -16,6 +16,8 @@ db.sqlite3
 
 # Static folder at project root
 /static/
+# Remove the virtualenv
+/myblog/
 
 # macOS
 ._*
