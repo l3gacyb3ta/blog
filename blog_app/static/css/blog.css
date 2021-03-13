@@ -162,3 +162,9 @@ li a:hover {
   filter:url('#wavy');
 }
 
+.left {
+  text-align: left;
+}
+hr {
+  color: rgba(255,255,255,0.9);
+}

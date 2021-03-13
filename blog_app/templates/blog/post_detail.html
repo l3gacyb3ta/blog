@@ -15,7 +15,7 @@
          <li><a href="/projects">projects</a></li>
         </ul>
 
-        <article>
+        <article class="left">
           <h1 class="center"> <a href="/blog">My blog (not a permanent title) - {{ post.title }}</a></h1>
           {% if post.created_date %}
               <date>
@@ -23,7 +23,8 @@
               </date>
               <name class="right">{{ post.author }}</name>
           {% endif %}
-          <br><br>
+          <hr>
+          
           <p>{{ post.text|safe }}</p>
         </article>
       </div>
