@@ -105,6 +105,17 @@ li a:hover {
   background-color: rgb(33, 4, 33);
 }
 
+@media (pointer:none), (pointer:coarse) {
+  ul {
+    font-size: 200%;
+  }
+  code {
+    font-size: 200%;
+  }
+  img {
+    width: 100%
+  }
+}
 
 /* IDs */
 

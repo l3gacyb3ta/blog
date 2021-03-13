@@ -1,6 +1,7 @@
 {% load static %}
 <html>
   <head>
+    <meta http-equiv="content-language" content="en-us">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <title>l3gacy - blog</title>
@@ -20,7 +21,7 @@
 
         {% for post in posts %}
           <article class="darken" onclick="location.href = '{% url 'post_detail' pk=post.pk %}'">
-            <h3><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
+            <h2><a href = "{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
             <p>{{ post.flavor_text }}</p>
             <date>{{ post.created_date }}, by {{ post.author }}</date>
           </article>

@@ -1,6 +1,7 @@
 {% load static %}
 <html>
   <head>
+    <meta http-equiv="content-language" content="en-us">
     <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
     <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     <title>l3gacy - home</title>
@@ -24,7 +25,7 @@
               <name class="right">{{ post.author }}</name>
           {% endif %}
           <hr>
-          
+
           <p>{{ post.text|safe }}</p>
         </article>
       </div>
